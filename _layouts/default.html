@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>gizzhead.org | King Gizzard & The Lizard Wizard live set info</title>
+    <style>
+      h1, h2 {
+        margin: 0;
+      }
+      article {
+        margin-top: 10px;
+      }
+      footer {
+        margin-top: 20px;
+      }
+      body {
+        margin-top: 2vh;
+        margin-left: 2vw;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <hgroup>
+        <h1>Gizzhead.org</h1>
+        <h2>King Gizzard & The Lizard Wizard live set info</h2>
+      </hgroup>
+    </header>
+    <section>
+      {% for show in site.posts %}
+      <article id="{{ show.date | date: '%Y-%m-%d' }}-{{ show.venue | downcase | replace: ' ', '-' }}">
+        <header>
+          <h1>{{ show.date | date: '%B %d, %Y' }} - {{ show.venue }}</h1>
+        </header>
+        <section>
+          {{ show.location }}
+        </section>
+        <section>
+          <a target="_blank" href="https://www.setlist.fm/setlist/king-gizzard-and-the-lizard-wizard/{{ show.setlist }}" alt="King Gizzard & The Lizard Wizard {{ show.title }} setlist.fm link">setlist</a>
+          {% if show.soundboard %}
+          &nbsp;|&nbsp;
+          <a target="_blank" href="https://www.youtube.com/watch?v={{ show.soundboard }}" alt="Soundboard recording of King Gizzard & The Lizard Wizard at {{ show.title }}">
+            soundboard
+          </a>
+          {% endif %}
+          {% if show.youtube1 %}
+          &nbsp;|&nbsp;
+          <a target="_blank" href="https://www.youtube.com/watch?v={{ show.youtube1 }}" alt="Live recording of King Gizzard & The Lizard Wizard at {{ show.title }}">
+            YouTube
+          </a>
+          {% endif %}
+        </section>
+        {% if show.notes %}
+          <section>
+            Notes:</br>{{ show.notes }}
+          </section>
+        {% endif %}
+      </article>
+      {% endfor %}
+    </section>
+    <footer>All songs copyright King Gizz & their respective rights holders. Contact the site admin: <a href="mailto:admin@gizzhead.org">admin@gizzhead.org</a></footer>
+  </body>
+</html>
