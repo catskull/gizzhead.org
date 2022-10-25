@@ -49,6 +49,12 @@
             YouTube
           </a>
           {% endif %}
+          {% if show.youtube2 %}
+          &nbsp;|&nbsp;
+          <a target="_blank" href="https://www.youtube.com/watch?v={{ show.youtube2 }}" alt="Live recording of King Gizzard & The Lizard Wizard at {{ show.title }}">
+            YouTube (alt)
+          </a>
+          {% endif %}
         </section>
         {% if show.notes %}
           <section>
