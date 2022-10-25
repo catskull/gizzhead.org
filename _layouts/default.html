@@ -36,23 +36,47 @@
           {{ show.location }}
         </section>
         <section>
-          <a target="_blank" href="https://www.setlist.fm/setlist/king-gizzard-and-the-lizard-wizard/{{ show.setlist }}" alt="King Gizzard & The Lizard Wizard {{ show.title }} setlist.fm link">setlist</a>
+          <a target="_blank" href="https://www.setlist.fm/setlist/king-gizzard-and-the-lizard-wizard/{{ show.setlist }}" alt="King Gizzard & The Lizard Wizard {{ show.venue }} in {{ show.location }} setlist.fm link">setlist</a>
+          {% if show.bandcamp %}
+          &nbsp;|&nbsp;
+          <a target="_blank" href="{{ show.bandcamp }}" alt="Official live recording of King Gizzard & The Lizard Wizard at {{ show.venue }} in {{ show.location }}">
+            bandcamp
+          </a>
+          {% endif %}
           {% if show.soundboard %}
           &nbsp;|&nbsp;
-          <a target="_blank" href="https://www.youtube.com/watch?v={{ show.soundboard }}" alt="Soundboard recording of King Gizzard & The Lizard Wizard at {{ show.title }}">
+          <a target="_blank" href="https://www.youtube.com/watch?v={{ show.soundboard }}" alt="Soundboard recording of King Gizzard & The Lizard Wizard at {{ show.venue }} in {{ show.location }}">
             soundboard
+          </a>
+          {% endif %}
+          {% if show.archive %}
+          &nbsp;|&nbsp;
+          <a target="_blank" href="https://archive.org/details/{{ show.archive }}" alt="Archive.org recording of King Gizzard & The Lizard Wizard at {{ show.venue }} in {{ show.location }}">
+            archive
+          </a>
+          {% endif %}
+          {% if show.archive2 %}
+          &nbsp;|&nbsp;
+          <a target="_blank" href="https://archive.org/details/{{ show.archive2 }}" alt="Archive.org recording of King Gizzard & The Lizard Wizard at {{ show.venue }} in {{ show.location }}">
+            archive (alt)
           </a>
           {% endif %}
           {% if show.youtube1 %}
           &nbsp;|&nbsp;
-          <a target="_blank" href="https://www.youtube.com/watch?v={{ show.youtube1 }}" alt="Live recording of King Gizzard & The Lizard Wizard at {{ show.title }}">
+          <a target="_blank" href="https://www.youtube.com/watch?v={{ show.youtube1 }}" alt="Live recording of King Gizzard & The Lizard Wizard at {{ show.venue }} in {{ show.location }}">
             YouTube
           </a>
           {% endif %}
           {% if show.youtube2 %}
           &nbsp;|&nbsp;
-          <a target="_blank" href="https://www.youtube.com/watch?v={{ show.youtube2 }}" alt="Live recording of King Gizzard & The Lizard Wizard at {{ show.title }}">
+          <a target="_blank" href="https://www.youtube.com/watch?v={{ show.youtube2 }}" alt="Live recording of King Gizzard & The Lizard Wizard at {{ show.venue }} in {{ show.location }}">
             YouTube (alt)
+          </a>
+          {% endif %}
+          {% if show.bootlegger %}
+          &nbsp;|&nbsp;
+          <a target="_blank" href="{{ show.bootlegger }}" alt="Bootlegger magnet link of King Gizzard & The Lizard Wizard at {{ show.venue }} in {{ show.location }}">
+            bootlegger (magnet)
           </a>
           {% endif %}
         </section>
