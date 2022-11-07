@@ -1,0 +1,8 @@
+---
+venue:  "Orpheum Theater"
+location: "New Orleans, LA USA"
+date:   2022-10-27
+setlist: "2022/orpheum-theater-new-orleans-la-5bbe8bd8.html"
+archive2: "kglw2022-10-27.twenty8"
+archive: "kglw2022-10-27.ShureMV88"
+---
