@@ -22,7 +22,8 @@
   <body>
     <header>
       <hgroup>
-        <h1>Gizzhead.org</h1>
+        {% assign image_files = site.static_files | where: "image", true %}
+        <img alt="gizzhead.org" src="{{ image_files.first.path }}">
         <h2>King Gizzard & The Lizard Wizard live set info</h2>
       </hgroup>
     </header>
@@ -98,6 +99,8 @@
       <a target="_blank" href="https://www.setlist.fm/user/gizzheaddotorg">Follow me on setlist.fm</a>
       <br>
       <a target="_blank" href="https://github.com/catskull/gizzhead.org">This site is open source! Contribute on GitHub</a>
+      <br>
+      Logo by <a target="_blank" href="https://www.instagram.com/dreweyes">Drew Wise</a>
     </footer>
   </body>
 </html>
