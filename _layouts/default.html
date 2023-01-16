@@ -80,6 +80,12 @@
             bootlegger (magnet)
           </a>
           {% endif %}
+          {% if show.apple %}
+          &nbsp;|&nbsp;
+          <a target="_blank" href="{{ show.apple }}" alt="Apple Music playlist of King Gizzard & The Lizard Wizard at {{ show.venue }} in {{ show.location }}">
+             Music
+          </a>
+          {% endif %}
         </section>
         {% if show.notes %}
           <section>
@@ -101,6 +107,8 @@
       <a target="_blank" href="https://github.com/catskull/gizzhead.org">This site is open source! Contribute on GitHub</a>
       <br>
       Logo by <a target="_blank" href="https://www.instagram.com/dreweyes">Drew Wise</a>
+      <br>
+      Apple Music setlists generated with <a href="https://www.icloud.com/shortcuts/de1543ee5b934940bef5dff874715be5">this Apple Shortcuts script</a>
     </footer>
   </body>
 </html>

@@ -7,4 +7,5 @@ youtube1: "VKi54rQdbpw"
 notes: "Live debut of Iron Lung"
 archive: "kglw2022-09-30.aud2.flac24"
 archive2: "kglw2022-09-30.aud1.flac24"
+apple: "https://music.apple.com/us/playlist/09-30-2022-desert-daze/pl.u-2aoqXEbCq2RJYl"
 ---
