@@ -86,6 +86,12 @@
              Music
           </a>
           {% endif %}
+          {% if show.spotify %}
+          &nbsp;|&nbsp;
+          <a target="_blank" href="{{ show.spotify }}" alt="Spotify playlist of King Gizzard & The Lizard Wizard at {{ show.venue }} in {{ show.location }}">
+            Spotify
+          </a>
+          {% endif %}
         </section>
         {% if show.notes %}
           <section>
