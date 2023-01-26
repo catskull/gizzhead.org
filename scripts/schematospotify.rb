@@ -4,9 +4,32 @@ require 'yaml'
 require 'net/http'
 require 'nokogiri'
 require 'openssl'
+require 'cgi'
 require 'byebug'
 
-TOKEN = 'BQCMOe_-JsfxRHRU0xMAnRHBDj3jCXVfYZDuOMf_9w8cWcgMbJu8kiJ_007KsVataD8mfdh0cWLV2kCx0WwkntuYKXRaSklR4eiaGd3Y3EZc7CK_YehW1Mcao7bncLD3KOOe5Qn2AXd7Y3SpSaZ2Vm5iMzk7nYREVlFomRsNpb-IV2vy7vTQhmHPr4soqo7Ny5gEUTIw-F52'
+TOKEN = 'BQBtqp0TKiArl6iJIH3RL43IrTiSUp5vwCPowRL563tLiHtAPfz_PNLZfrkMky-cM6Yo0SKQiz7KC6URP5O3urXBrfnQjgkCkW1__joL-lrNVsXcOT-BxWxeILkxlepvISASQxcmsUwmx5mdUhCpFZcv1N5cU6zZBHxX70H8jkYE2zkEL0-ALVOKM7l1N09LHAqo9a78gb8V'
+
+def find_song(name)
+  query = %Q[#{name} track:#{name} artist:King Gizzard & The Lizard Wizard]
+  query = CGI.escapeURIComponent(query)
+  url = URI(%Q[https://api.spotify.com/v1/search?q=#{query}&type=track&limit=10])
+
+  http = Net::HTTP.new(url.host, url.port)
+  http.use_ssl = true
+  http.verify_mode = OpenSSL::SSL::VERIFY_NONE
+
+  request = Net::HTTP::Get.new(url)
+  request["Authorization"] = "Bearer #{TOKEN}"
+
+  response = http.request(request)
+  songs = JSON.parse(response.read_body)['tracks']['items']
+  if songs.empty?
+    byebug
+  end
+  song = songs.detect { |song| song['name'].downcase.gsub("'", '') == name.downcase}
+  byebug if song.nil?
+  song
+end
 
 def make_playlist(name, description)
   url = URI("https://api.spotify.com/v1/users/1267237896/playlists")
@@ -46,7 +69,7 @@ def get_music_playlist_from_url(url)
   response = Net::HTTP.get(uri)
   doc = Nokogiri::HTML(response)
   script = doc.at_xpath("//script[@id='schema:music-playlist']")
-  JSON.parse(script.content)
+  JSON.parse(script&.content)
 end
 
 # Authenticate with Spotify
@@ -57,32 +80,42 @@ puts("Click here and authorize: https://accounts.spotify.com/authorize?response_
 
 Dir.glob("../_posts/*.md") do |file_path|
   post = Psych.safe_load_file(file_path, permitted_classes: [Date])
-  if (post['apple'])
-    puts "Creating playlist for #{file_path}"
+  if (post['spotify'])
+    puts "Skipping #{file_path}, already done."
+  elsif (post['apple'])
+    puts "Processing #{file_path}..."
     print "Retrieving playlist data from #{post['apple']}..."
   	playlist_json = get_music_playlist_from_url(post['apple'])
-    puts 'done.'
+    puts ' done.'
     print "Creating playlist #{playlist_json['name']}..."
     playlist = make_playlist(playlist_json["name"], 'test')
     url = playlist['external_urls']['spotify']
-    puts 'done.'
+    puts ' done.'
 
-    print "Parsing tracklist..."
+    puts "Parsing tracklist..."
   	tracks = playlist_json['track'].map { |track| 
-			song = RSpotify::Track.search("track:#{track["name"]} artist:King Gizzard & The Lizard Wizard", limit: 1)[0]
-      puts "Found song #{song.name} from #{song.album}!"
+      puts "searching for #{track["name"]}"
+			song = find_song(track["name"].gsub("'", ''))
+      if song.nil? || song['name'].downcase != track['name'].downcase
+        byebug
+        puts "Mismatch detected!!!!!!!"
+      end 
+      byebug if song.nil?
+      puts "Found song #{song['name']} on #{song['album']['name']}!"
+      song['uri']
 		}
-    puts 'done.'
+    puts ' done.'
 
     print "Adding #{tracks.length} songs to playlist..."
 		add_songs(playlist['id'], tracks)
-    puts 'done.'
+    puts ' done.'
     print "Adding spotify url to file..."
     post['spotify'] = url
     File.open(file_path, 'w') do |file|
       file.write(post.to_yaml)
+      file.write("---\n")
     end
-    puts 'done.'
+    puts ' done.'
   else
     puts "Skipping #{file_path}, no Apple playlist found"
   end
