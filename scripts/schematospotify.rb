@@ -88,7 +88,7 @@ Dir.glob("../_posts/*.md") do |file_path|
   	playlist_json = get_music_playlist_from_url(post['apple'])
     puts ' done.'
     print "Creating playlist #{playlist_json['name']}..."
-    playlist = make_playlist(playlist_json["name"], 'test')
+    playlist = make_playlist(playlist_json["name"], "Provided by Gizzhead.org - Your source for all things gizz! setlist.fm: https://www.setlist.fm/setlist/king-gizzard-and-the-lizard-wizard/#{post['setlist']}")
     url = playlist['external_urls']['spotify']
     puts ' done.'
 
