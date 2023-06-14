@@ -7,7 +7,7 @@ require 'openssl'
 require 'cgi'
 require 'byebug'
 
-TOKEN = 'BQBtqp0TKiArl6iJIH3RL43IrTiSUp5vwCPowRL563tLiHtAPfz_PNLZfrkMky-cM6Yo0SKQiz7KC6URP5O3urXBrfnQjgkCkW1__joL-lrNVsXcOT-BxWxeILkxlepvISASQxcmsUwmx5mdUhCpFZcv1N5cU6zZBHxX70H8jkYE2zkEL0-ALVOKM7l1N09LHAqo9a78gb8V'
+TOKEN = 'BQAKKGXvcFwyLPCN1PTvJS16iZyMk4N0_KHCJc38xPLzJPkg2fmxQnK-7yGdI9qWCwAIBkfOVaDh-HbesaxqJklYf9WUIRzRAb8q51pW0xk4cKjITH1T9LxEp4thE6mk0ggjlRlm95ksZ2PyFIiHf5ZRubaTtCJ0SMC2MZ_PVtVBlYLbTbymK4aQFTOCG7XV3LZkyNiD4L4'
 
 def find_song(name)
   query = %Q[#{name} track:#{name} artist:King Gizzard & The Lizard Wizard]
@@ -24,10 +24,10 @@ def find_song(name)
   response = http.request(request)
   songs = JSON.parse(response.read_body)['tracks']['items']
   if songs.empty?
-    byebug
-  end
+  #   byebug
+  # end
   song = songs.detect { |song| song['name'].downcase.gsub("'", '') == name.downcase}
-  byebug if song.nil?
+  # byebug if song.nil?
   song
 end
 
@@ -97,16 +97,20 @@ Dir.glob("../_posts/*.md") do |file_path|
       puts "searching for #{track["name"]}"
 			song = find_song(track["name"].gsub("'", ''))
       if song.nil? || song['name'].downcase != track['name'].downcase
-        byebug
-        puts "Mismatch detected!!!!!!!"
+        puts "Mismatch or unknown song"
       end 
-      byebug if song.nil?
-      puts "Found song #{song['name']} on #{song['album']['name']}!"
-      song['uri']
+      if song.nil?
+        puts 'unknown song'
+        ''
+        nil
+      else
+        puts "Found song #{song['name']} on #{song['album']['name']}!"
+        song['uri']
+      end
 		}
     puts ' done.'
 
-    print "Adding #{tracks.length} songs to playlist..."
+    print "Adding #{tracks.compact!.length} songs to playlist..."
 		add_songs(playlist['id'], tracks)
     puts ' done.'
     print "Adding spotify url to file..."
