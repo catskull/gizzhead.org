@@ -1,0 +1,66 @@
+h1, h2, h3 {
+	font-family: ui-rounded;
+}
+
+* {
+	font-family: ui-serif;
+}
+
+p {
+	color: #000;
+	line-height: 1.25em;
+	padding: 0 0 1em 0;
+	text-align: justify;
+}
+
+hr {
+    text-align: center;
+    border:0
+}
+
+hr:after {
+    content: '☮';
+}
+
+header {
+	text-align: center;
+
+	ul {
+		list-style-type: none;
+		font-size: 1.5em;
+		font-family: ui-rounded;
+		font-weight: bold;
+		text-transform: uppercase;
+
+		li { display: inline; }
+
+		a {
+			text-decoration: none;
+			color: initial;
+		}
+	}
+}
+
+#posts {
+	max-width: 42%;
+	margin: 0 auto;
+
+	img {
+		max-width: 100%;
+	}
+
+	figcaption {
+		text-align: center;
+		font-size: 1.2em;
+	}
+
+	article {
+		h2 {
+			margin-bottom: 0;
+		}
+
+		iframe#video-player {
+			max-width: 100%;
+		}
+	}
+}
