@@ -6,6 +6,10 @@ h1, h2, h3 {
 	font-family: ui-serif;
 }
 
+img {
+	max-width: 100%;
+}
+
 p {
 	color: #000;
 	line-height: 1.25em;
@@ -69,3 +73,5 @@ footer > nav > ul{
 		}
 	}
 }
+
+@import "mobile";
