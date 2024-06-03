@@ -1,0 +1,134 @@
+---
+layout: none
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>gizzhead.org | King Gizzard & The Lizard Wizard live set info</title>
+    <style>
+      h1, h2 {
+        margin: 0;
+      }
+      article {
+        margin-top: 10px;
+      }
+      footer {
+        margin-top: 20px;
+      }
+      body {
+        margin-top: 2vh;
+        margin-left: 2vw;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <hgroup>
+        {% assign image_files = site.static_files | where: "image", true %}
+        <img alt="gizzhead.org" src="{{ image_files.first.path }}">
+        <h2>King Gizzard & The Lizard Wizard live set info</h2>
+      </hgroup>
+    </header>
+    <section>
+      {% for show in site.shows %}
+      <article id="{{ show.date | date: '%Y-%m-%d' }}-{{ show.venue | downcase | replace: ' ', '-' }}">
+        <header>
+          <h1>{{ show.date | date: '%B %d, %Y' }} - {{ show.venue }}</h1>
+        </header>
+        <section>
+          {{ show.location }}
+        </section>
+        <section>
+          <a target="_blank" href="https://www.setlist.fm/setlist/king-gizzard-and-the-lizard-wizard/{{ show.setlist }}" alt="King Gizzard & The Lizard Wizard {{ show.venue }} in {{ show.location }} setlist.fm link">setlist</a>
+          {% if show.bandcamp %}
+          &nbsp;|&nbsp;
+          <a target="_blank" href="{{ show.bandcamp }}" alt="Official live recording of King Gizzard & The Lizard Wizard at {{ show.venue }} in {{ show.location }}">
+            bandcamp
+          </a>
+          {% endif %}
+          {% if show.soundboard %}
+          &nbsp;|&nbsp;
+          <a target="_blank" href="{{ show.soundboard }}" alt="Soundboard recording of King Gizzard & The Lizard Wizard at {{ show.venue }} in {{ show.location }}">
+            soundboard
+          </a>
+          {% endif %}
+          {% if show.archive %}
+          &nbsp;|&nbsp;
+          <a target="_blank" href="https://archive.org/details/{{ show.archive }}" alt="Archive.org recording of King Gizzard & The Lizard Wizard at {{ show.venue }} in {{ show.location }}">
+            archive
+          </a>
+          {% endif %}
+          {% if show.archive2 %}
+          &nbsp;|&nbsp;
+          <a target="_blank" href="https://archive.org/details/{{ show.archive2 }}" alt="Archive.org recording of King Gizzard & The Lizard Wizard at {{ show.venue }} in {{ show.location }}">
+            archive (alt)
+          </a>
+          {% endif %}
+          {% if show.youtube1 %}
+          &nbsp;|&nbsp;
+          <a target="_blank" href="https://www.youtube.com/watch?v={{ show.youtube1 }}" alt="Live recording of King Gizzard & The Lizard Wizard at {{ show.venue }} in {{ show.location }}">
+            YouTube
+          </a>
+          {% endif %}
+          {% if show.youtube2 %}
+          &nbsp;|&nbsp;
+          <a target="_blank" href="https://www.youtube.com/watch?v={{ show.youtube2 }}" alt="Live recording of King Gizzard & The Lizard Wizard at {{ show.venue }} in {{ show.location }}">
+            YouTube (alt)
+          </a>
+          {% endif %}
+          {% if show.bootlegger %}
+          &nbsp;|&nbsp;
+          <a target="_blank" href="{{ show.bootlegger }}" alt="Bootlegger magnet link of King Gizzard & The Lizard Wizard at {{ show.venue }} in {{ show.location }}">
+            bootlegger (magnet)
+          </a>
+          {% endif %}
+          {% if show.apple %}
+          &nbsp;|&nbsp;
+          <a target="_blank" href="{{ show.apple }}" alt="Apple Music playlist of King Gizzard & The Lizard Wizard at {{ show.venue }} in {{ show.location }}">
+             Music
+          </a>
+          {% endif %}
+          {% if show.spotify %}
+          &nbsp;|&nbsp;
+          <a target="_blank" href="{{ show.spotify }}" alt="Spotify playlist of King Gizzard & The Lizard Wizard at {{ show.venue }} in {{ show.location }}">
+            Spotify
+          </a>
+          {% endif %}
+        </section>
+        {% if show.notes %}
+          <section>
+            Notes:<br>{{ show.notes }}
+          </section>
+        {% endif %}
+      </article>
+      {% endfor %}
+    </section>
+    <footer>
+      All songs copyright King Gizz & their respective rights holders.
+      <br>
+      Support the band. Buy stuff: <a target="_blank" href="https://gizzverse.com" alt="King Gizzard & The Lizard Wizard official store">gizzverse.com</a>
+      <br>
+      Contact the site admin: <a href="mailto:admin@gizzhead.org">admin@gizzhead.org</a>
+      <br>
+      <a target="_blank" href="https://www.setlist.fm/user/gizzheaddotorg">Follow me on setlist.fm</a>
+      <br>
+      <a target="_blank" href="https://github.com/catskull/gizzhead.org">This site is open source! Contribute on GitHub</a>
+      <br>
+      Logo by <a target="_blank" href="https://www.instagram.com/dreweyes">Drew Wise</a>
+      <br>
+      Apple Music setlists generated with <a href="https://www.icloud.com/shortcuts/de1543ee5b934940bef5dff874715be5">this Apple Shortcuts script</a>
+      <br>
+      Gizzhead.org is an independently run fan site dedicated to promoting the band King Gizzard & The Lizard Wizard. We are not affiliated with King Gizz or any related entities in any way.
+<br>
+      <img style='cursor: pointer;'
+  referrerpolicy='no-referrer-when-downgrade'
+  src='https://likes.catskull.net'
+  onclick="fetch('https://likes.catskull.net', {method:'POST',referrerPolicy:'no-referrer-when-downgrade'}).then(()=>this.src='https://likes.catskull.net'.split('?')[0]+'?t='+Date.now())"
+  onmouseover="this.src='data:image/svg+xml;base64,CiAgCQkJPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMjQiIHdpZHRoPSI1NiI+CiAgCQkJICA8dGV4dCBpZD0ibGlrZXNUZXh0IiB4PSI1MCUiIHk9IjUwJSIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGRvbWluYW50LWJhc2VsaW5lPSJtaWRkbGUiIHRleHQtYW5jaG9yPSJtaWRkbGUiPvCfkY0gTGlrZTwvdGV4dD4KICAJCQk8L3N2Zz4KICAJCQ=='"
+  onmouseout="this.src='https://likes.catskull.net/?t=0'"
+>
+    </footer>
+  </body>
+</html>
