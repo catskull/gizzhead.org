@@ -4,9 +4,12 @@ description: >- # this means to ignore newlines until "baseurl:"
   King Gizzard and the Lizard Wizard historical live show setlists and bootlegs
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://gizzhead.org" # the base hostname & protocol for your site, e.g. http://example.com
-
+excerpt_separator: "<!--fold-->"
 defaults:
   - scope:
       path: "assets/img"
     values:
       image: true
+
+collections:
+  - shows
