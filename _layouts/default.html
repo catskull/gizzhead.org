@@ -22,15 +22,6 @@
         <hr/>
       {% endfor %}
     </section>
-    <footer>
-<br>
-      <img style='cursor: pointer;'
-  referrerpolicy='no-referrer-when-downgrade'
-  src='https://likes.catskull.net'
-  onclick="fetch('https://likes.catskull.net', {method:'POST',referrerPolicy:'no-referrer-when-downgrade'}).then(()=>this.src='https://likes.catskull.net'.split('?')[0]+'?t='+Date.now())"
-  onmouseover="this.src='data:image/svg+xml;base64,CiAgCQkJPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMjQiIHdpZHRoPSI1NiI+CiAgCQkJICA8dGV4dCBpZD0ibGlrZXNUZXh0IiB4PSI1MCUiIHk9IjUwJSIgZm9udC1mYW1pbHk9InNhbnMtc2VyaWYiIGRvbWluYW50LWJhc2VsaW5lPSJtaWRkbGUiIHRleHQtYW5jaG9yPSJtaWRkbGUiPvCfkY0gTGlrZTwvdGV4dD4KICAJCQk8L3N2Zz4KICAJCQ=='"
-  onmouseout="this.src='https://likes.catskull.net/?t=0'"
->
-    </footer>
+    {% include footer.html %}
   </body>
 </html>

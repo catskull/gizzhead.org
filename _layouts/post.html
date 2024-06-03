@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>gizzhead.org | King Gizzard & The Lizard Wizard fan site</title>
+    <link rel="stylesheet" href="/assets/css/gizzhead.css">
+  </head>
+  <body>
+    {% include header.html %}
+    <section id="posts">
+      <article>
+        <time datetime="{{page.date}}">{{page.date | date_to_string: "ordinal", "US" }}</time>
+        <section>
+          {{page.content}}
+        </section>
+      </article>
+      <a href="/">home</a>
+    </section>
+  </body>
+</html>
