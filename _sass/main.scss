@@ -85,5 +85,18 @@ footer > nav > ul{
 	}
 }
 
+#spinner {
+	cursor: pointer;
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+	animation: rotate 10s linear infinite;
+	@keyframes rotate {
+	  to {
+	    transform: rotate(360deg);
+	  }
+	}
+}
+
 @import "mobile";
 @import "theme";
