@@ -4,7 +4,7 @@
   <body>
   	{% include header.html %}
     <section id="posts">
-      {% for post in site.posts reversed %}
+      {% for post in site.posts %}
         <article>
           <h2>{{post.title}}</h2>
           <time datetime="{{post.date}}">{{post.date | date_to_string: "ordinal", "US" }}</time>
@@ -15,7 +15,7 @@
             {% endif %}
           </section>
         </article>
-        {% if post != site.posts.first %}
+        {% if post != site.posts.last %}
           <hr/>
         {% endif %}
       {% endfor %}
