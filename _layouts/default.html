@@ -19,7 +19,9 @@
             {% endif %}
           </section>
         </article>
-        <hr/>
+        {% if post != site.posts.first %}
+          <hr/>
+        {% endif %}
       {% endfor %}
     </section>
     {% include footer.html %}
