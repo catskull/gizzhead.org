@@ -29,6 +29,11 @@ header {
 	text-align: center;
 }
 
+blockquote {
+	border-left: solid;
+	padding-left: 1em;
+}
+
 footer > nav > ul{
 	list-style-type: none;
 	font-family: ui-rounded;
