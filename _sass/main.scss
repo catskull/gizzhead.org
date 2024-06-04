@@ -11,7 +11,6 @@ img {
 }
 
 p {
-	color: #000;
 	line-height: 1.25em;
 	padding: 0 0 1em 0;
 	text-align: justify;
@@ -75,3 +74,4 @@ footer > nav > ul{
 }
 
 @import "mobile";
+@import "theme";
