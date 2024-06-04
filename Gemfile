@@ -31,3 +31,5 @@ gem "http_parser.rb", "~> 0.6.0", :platforms => [:jruby]
 gem "webrick", "~> 1.7"
 
 gem "rspotify", "~> 2.11"
+
+gem "jekyll-seo-tag", "~> 2.8"
