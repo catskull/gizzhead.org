@@ -309,6 +309,7 @@ PLATFORMS
 DEPENDENCIES
   github-pages
   http_parser.rb (~> 0.6.0)
+  jekyll-feed (~> 0.17.0)
   jekyll-seo-tag (~> 2.8)
   rspotify (~> 2.11)
   tzinfo (>= 1, < 3)

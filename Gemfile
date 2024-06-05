@@ -33,3 +33,5 @@ gem "webrick", "~> 1.7"
 gem "rspotify", "~> 2.11"
 
 gem "jekyll-seo-tag", "~> 2.8"
+
+gem "jekyll-feed", "~> 0.17.0"
