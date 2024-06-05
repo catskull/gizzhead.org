@@ -4,15 +4,20 @@
   <body>
   	{% include header.html %}
     <section id="posts">
-      {% for post in site.posts %}
+      {%- assign news = site.posts | concat: site.playlists | sort: 'date' | reverse -%}
+      {% for post in news %}
         <article>
           <h2>{{post.title}}</h2>
           <time datetime="{{post.date}}">{{post.date | date_to_string: "ordinal", "US" }}</time>
           <section>
-            {{post.excerpt}}
-            {% if post.excerpt != post.content %}
-              <a href="{{post.url}}">Keep reading</a>
-            {% endif %}
+            {% unless post.collection == "playlists" %}
+              {{post.excerpt}}
+              {% if post.excerpt != post.content %}
+                <a href="{{post.url}}">Keep reading</a>
+              {% endif %}
+            {% else %}
+              {% include apple_music.html slug=post.apple_slug %}
+            {% endunless %}
           </section>
         </article>
         {% if post != site.posts.last %}

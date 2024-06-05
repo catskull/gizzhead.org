@@ -12,8 +12,13 @@ defaults:
       path: "assets/img"
     values:
       image: true
+  - scope:
+     category: "playlist"
+    values:
+      title: "Playlist of the week"
 
 collections:
   - shows
+  - playlists
 plugins:
   - jekyll-seo-tag
