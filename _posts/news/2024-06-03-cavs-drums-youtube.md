@@ -1,6 +1,7 @@
 ---
 title: Cavs drum isolation tracks posted on YouTube
 layout: post
+tags: cavs, gizz, drums, live
 ---
 
 Cavs put up some live isolation tracks for Motor Spirit (Prague) and Flamethrower (Edinburgh) from their current European tour. Check it out and see if you can catch them on tour!

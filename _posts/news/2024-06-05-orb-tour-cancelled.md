@@ -1,5 +1,6 @@
 ---
 title: ORB Tailem Bend Oz tour cancelled
+tags: orb, tailem bend, tour
 ---
 ![Broke my hip tour postponed sorry yall](/assets/img/news/orbtour1.png)
 
