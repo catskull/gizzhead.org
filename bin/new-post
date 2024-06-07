@@ -1,0 +1,29 @@
+#!/usr/bin/env ruby
+
+require 'date'
+
+def create_post_file()
+  # Get the current date in YYYY-MM-DD format
+  date = Date.today.strftime('%Y-%m-%d')
+  
+  # Create the filename
+  filename = "./_posts/news/#{date}-title.md"
+  
+  # Define the content of the file
+  content = <<~CONTENT
+    ---
+    title: newpost
+    tags: []
+    date: #{DateTime.now.strftime('%Y-%m-%d %H:%M:%S %z')}
+    ---
+  CONTENT
+
+  # Write the content to the file
+  File.write(filename, content)
+  
+  puts "File created at #{filename}"
+
+  system("subl", "./", filename)
+end
+
+create_post_file()
