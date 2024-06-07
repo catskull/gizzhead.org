@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Tailem Bend - new ORB album out July 12
-tags: [orb, tailem bend, album news]
+tags: [orb, tailem bend, album news, flightless]
 ---
 <iframe loading="lazy" style="border: 0; width: 350px; height: 350px;" src="https://bandcamp.com/EmbeddedPlayer/album=1147828000/size=large/bgcol=ffffff/linkcol=0687f5/minimal=true/transparent=true/" seamless><a href="https://orband.bandcamp.com/album/tailem-bend">Tailem Bend by ORB</a></iframe>
 
