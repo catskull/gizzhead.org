@@ -1,6 +1,6 @@
 ---
 title: SORCS 80 - new OSEES album out August 9
-tags: [osees, sorcs 80, album news, castle face]
+date: 2024-06-07 12:23:13 -0600
 ---
 [Castle Face Records](https://en.wikipedia.org/wiki/Castle_Face_Records) announced today via [Instagram](https://www.instagram.com/p/C76rwC2xP3d/) that the newest OSEES record will release August 9 and is titled _SORCS 80_. Stream the first single "[Cassius, Brutus & Judas](https://danteworlds.laits.utexas.edu/textpopup/inf3402.html)" now!
 
@@ -17,7 +17,7 @@ From Instagram:
  > <3<br>
  > Osees
 
-The super fancy versions are already sold out but you can preorder the vinyl now!
+The super fancy versions are already sold out but you can [preorder the vinyl now](https://ohsees.bandcamp.com/album/sorcs-80)!
 
 [![OSEES album SORCS 80 on "Neon Green & Black" vinyl](/assets/img/news/osees-sorcs-80.jpg)](https://ohsees.bandcamp.com/album/sorcs-80)
 

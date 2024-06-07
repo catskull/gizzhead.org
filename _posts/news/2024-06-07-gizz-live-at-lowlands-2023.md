@@ -1,6 +1,7 @@
 ---
 title: Live spotlight - Live at Lowlands 2023
 tags: [gizz, live, viagra boys]
+date: 2024-06-07 07:23:13 -0600
 ---
 
 {% include youtube.html embed=y8Wawh9X7GM %}
