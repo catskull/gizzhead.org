@@ -19,6 +19,6 @@ From Instagram:
 
 The super fancy versions are already sold out but you can preorder the vinyl now!
 
-[![OSEES album SORCS 80 on "Neon Green & Black" vinyl](/assets/img/news/osees-sorcs-80.jpg)](/)
+[![OSEES album SORCS 80 on "Neon Green & Black" vinyl](/assets/img/news/osees-sorcs-80.jpg)](https://ohsees.bandcamp.com/album/sorcs-80)
 
 I have no idea what the name means. ChatGPT thinks it's talking about the 80cc class fo the Southern Off-Road Championship Series. Maybe. I'm glad to see no obvious identifiers for the album or it's contents. Who among us hasn't helplessly crawled through the massive Osees section at the record store?
