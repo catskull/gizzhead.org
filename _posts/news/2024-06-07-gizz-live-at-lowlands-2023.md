@@ -1,5 +1,5 @@
 ---
-title: Live spotlight - Live at Lowlands 2023
+title: Live spotlight - King Gizz at Lowlands 2023
 tags: [gizz, live, viagra boys]
 date: 2024-06-07 07:23:13 -0600
 ---
