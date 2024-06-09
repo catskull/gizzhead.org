@@ -48,6 +48,8 @@ footer {
 	padding-left: 0.5em;
 	padding-right: 0.5em;
 	border-top: 1px solid;
+	border-right: 1px solid;
+	border-radius: 0 10px 0 0;
 
 	nav > ul{
 		padding-inline-start: 0;
@@ -109,13 +111,41 @@ footer {
 	position: fixed;
 	bottom: 10px;
 	right: 10px;
+	width: 150px;
+	height: 150px;
 	animation: rotate 10s linear infinite;
-	@keyframes rotate {
-	  to {
-	    transform: rotate(360deg);
-	  }
+}
+
+.explode {
+	animation: rotate 3s linear infinite, explode 10s forwards !important;
+}
+
+.explode:hover {
+	opacity: 25%;
+	animation: rotate 3s linear infinite, explode 10s forwards !important;
+}
+
+@keyframes explode {
+	from {
+		bottom: 10px;
+		right: 10px;
+		width: 150px;
+		height: 150px;
+	}
+	to {
+		bottom: calc(50% - 300px);
+		right: calc(50% - 300px);
+		width: 600px;
+		height: 600px;
 	}
 }
+
+@keyframes rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 
 @import "mobile";
 @import "theme";
