@@ -1,5 +1,5 @@
 ---
-title: King Gizz announces 2025 European residency tour
+title: King Gizz announces 2025 European residency tour, tease album announcement
 tags: [gizz, tour, residency, europe]
 date: 2024-06-10 14:46:05 -0600
 ---
@@ -9,6 +9,8 @@ Today King Gizzard & The Lizard Wizard [announced via their Instagram account](h
  - Vilnius, Lithuania (May 29, 30, 31)
  - Athens, Greece (June 4, 5, 6)
  - Plovdiv, Bulgaria (June 8, 9, 10)
+
+ They also teased new album details! nth-Dimensional Ska maybe?
 
  Full announcement:
 
