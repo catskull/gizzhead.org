@@ -4,6 +4,9 @@
 
 h1, h2, h3 {
 	font-family: ui-rounded;
+	* {
+		font-family: ui-rounded;
+	}
 }
 
 * {
@@ -87,8 +90,9 @@ footer {
 			margin-bottom: 0;
 		}
 
-		iframe#video-player {
+		iframe.video-player {
 			max-width: 100%;
+			border: none;
 		}
 
 		iframe{

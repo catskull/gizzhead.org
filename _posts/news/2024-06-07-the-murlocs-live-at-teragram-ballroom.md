@@ -3,7 +3,7 @@ title: The Murlocs Live at Teragram Ballroom
 tags: [gizz, the murlocs, ambrose, cookie, album news, video, live]
 date: 2024-06-07 17:23:13 -0600
 ---
-<iframe loading="lazy" style="border: 0; width: 400px; height: 472px;" src="https://bandcamp.com/EmbeddedPlayer/album=2284603379/size=large/bgcol=ffffff/linkcol=0687f5/artwork=small/transparent=true/" seamless><a href="https://themurlocs.bandcamp.com/album/live-at-teragram-ballroom">Live at Teragram Ballroom by The Murlocs</a></iframe>
+<iframe loading="lazy" style="border: 0; width: 400px; height: 472px;" src="https://bandcamp.com/EmbeddedPlayer/album=2284603379/size=large/bgcol=ffffff/linkcol=0687f5/artwork=small/transparent=true/"></iframe>
 
 The Murlocs first live album "Live at the Teragram Ballroom" is out on streaming now with preorders open for vinyl at [p(doom)](https://pdoomrecords.com/products/live-at-the-teragram-ballroom)/[bandcamp](https://themurlocs.bandcamp.com/album/live-at-teragram-ballroom)/[etc](https://atorecords-ffm.com/live-teragram).
 

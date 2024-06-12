@@ -4,7 +4,7 @@ date: 2024-06-07 12:23:13 -0600
 ---
 [Castle Face Records](https://en.wikipedia.org/wiki/Castle_Face_Records) announced today via [Instagram](https://www.instagram.com/p/C76rwC2xP3d/) that the newest OSEES record will release August 9 and is titled _SORCS 80_. Stream the first single "[Cassius, Brutus & Judas](https://danteworlds.laits.utexas.edu/textpopup/inf3402.html)" now!
 
-<iframe loading="lazy" style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=1423688760/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://ohsees.bandcamp.com/album/sorcs-80">SORCS 80 by OSEES</a></iframe>
+<iframe loading="lazy" style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=1423688760/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/"></iframe>
 
 From Instagram:
  > This one is a weird one with no guitar or keys and a full horn section <br>
