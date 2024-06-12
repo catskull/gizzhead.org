@@ -3,7 +3,7 @@
   {% include head.html %}
   <body>
   	{% include header.html %}
-    <section id="posts">
+    <section id="posts" aria-labelledby="main-heading">
       {%- assign news = site.posts | concat: site.playlists | sort: 'date' | reverse -%}
       {% for post in news %}
         <article>
