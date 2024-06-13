@@ -5,7 +5,7 @@ date: 2024-06-07 07:23:13 -0600
 ---
 {% include youtube.html embed="y8Wawh9X7GM" %}
 
-I love these festival vids. I can't believe we can watch them for free. Huge shoutout to [Lowlands](https://lowlands.nl) and the entire Netherlands in general.
+I love these festival vids. I can't believe we can watch them for free. Huge shoutout to [Lowlands](https://lowlands.nl){:target="_blank"} and the entire Netherlands in general.
 
 Setlist:
  1. Gila Monster
@@ -18,7 +18,7 @@ Setlist:
  1. Magma
 
 Highlights -
- - [Viagra Boys](https://youtu.be/ooKzqbJm_Pc?si=gHd9onbY5jcZH4rP)' saxaphonist Oskar Carls jamming on Hypertension and Magma
+ - [Viagra Boys](https://youtu.be/ooKzqbJm_Pc?si=gHd9onbY5jcZH4rP){:target="_blank"}' saxaphonist Oskar Carls jamming on Hypertension and Magma
  - Joey Walker raging
  - the garden goblin!
 

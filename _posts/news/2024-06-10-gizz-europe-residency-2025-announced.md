@@ -3,7 +3,7 @@ title: King Gizz announces 2025 European residency tour, tease album announcemen
 tags: [gizz, tour, residency, europe]
 date: 2024-06-10 14:46:05 -0600
 ---
-Today King Gizzard & The Lizard Wizard [announced via their Instagram account](https://www.instagram.com/p/C8B7QpzRP0D) a 2025 Europe residency tour. Dates run from May 18 through June 10 across (in order):
+Today King Gizzard & The Lizard Wizard [announced via their Instagram account](https://www.instagram.com/p/C8B7QpzRP0D){:target="_blank"} a 2025 Europe residency tour. Dates run from May 18 through June 10 across (in order):
  - Lisbon, Portugal (May 18, 19, 20)
  - Barcelona, Spain (May 23, 25, 25)
  - Vilnius, Lithuania (May 29, 30, 31)

@@ -2,9 +2,9 @@
 title: Guruguru Brain announces 10th anniversary compilation
 tags: [spotlight, mildlife, chorus, album news]
 ---
-[Guruguru Brain](https://gurugurubrain.space), record label founded by members of [Kikagaku Moyo](https://www.youtube.com/watch?v=PpnQlnra_to), announced today a new album commemorating the label's 10th anniversary.
+[Guruguru Brain](https://gurugurubrain.space){:target="_blank"}, record label founded by members of [Kikagaku Moyo](https://www.youtube.com/watch?v=PpnQlnra_to){:target="_blank"}, announced today a new album commemorating the label's 10th anniversary.
 
-From the band's [Instagram announcement](https://www.instagram.com/p/C71DTPOCe8p/?img_index=2):
+From the band's [Instagram announcement](https://www.instagram.com/p/C71DTPOCe8p/?img_index=2){:target="_blank"}:
 >
 >We want to share with you that this year is the label’s 10-year anniversary! 🎂 What started as packing tapes in our flat in Tokyo is now a label based in Rotterdam with 33 releases and more to come.
 >
@@ -15,7 +15,7 @@ From the band's [Instagram announcement](https://www.instagram.com/p/C71DTPOCe8p
 >This time around we want to update current sounds from across Asia including Taiwan, India, China, South Korea, Indonesia, Thailand, Singapore, and Malaysia. It was a lot of fun to dig around and find new artists.
 >
 
-Preorders are limited to 500 limited edition copies and [begin today](https://gurugurubrain.space) over, shipping in "late July".
+Preorders are limited to 500 limited edition copies and [begin today](https://gurugurubrain.space){:target="_blank"} over, shipping in "late July".
 
 ![Guruguru Brain Wash 2 ltd edition vinyl](/assets/img/news/gurugurubrainwash2.jpg)
 
