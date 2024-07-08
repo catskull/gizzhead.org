@@ -6,8 +6,8 @@ I'd like to take a moment to bring to your attention the latest offering from Me
 
 Favorite song: Yourself
 
-{% include youtube.html embed="GJ5ZJEH4usg" %}
+{% include youtube.html embed="GJ5ZJEH4usg" title="Mildlife - Chorus (Full Album)" %}
 
-{% include youtube.html embed="zaes7ozjDEw" %}
+{% include youtube.html embed="zaes7ozjDEw" title="Mildlife - Return To Centaurus (Music Video)" %}
 
-{% include youtube.html embed="PzNfJZokCyk" %}
+{% include youtube.html embed="PzNfJZokCyk" title="Mildlife - Future Life (Live)" %}
